@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Medicine Recommendation System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .about-container {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: var(--bs-body-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    }
+    h2 {
+      color: #0077cc;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h4 {
+      margin-top: 30px;
+      color: #34495e;
+    }
+    p {
+      line-height: 1.8;
+      color: var(--bs-body-color);
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: var(--bs-secondary-color);
+      background-color: var(--bs-secondary-bg);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="theme-toggle">
+    <button class="btn btn-sm btn-outline-primary" onclick="toggleTheme()">🌗</button>
+  </div>
+
+  <div class="container about-container">
+    <h2>About Us</h2>
+
+    <p>Welcome to the <strong>Medicine Recommendation System</strong>, a student-built platform that bridges technology and healthcare to help users better understand potential health issues through machine learning.</p>
+
+    <h4>Our Vision</h4>
+    <p>We envision a future where access to preliminary healthcare guidance is convenient, intelligent, and personalized — starting with symptoms you experience every day.</p>
+
+    <h4>Our Mission</h4>
+    <p>To build intelligent, AI-powered tools that empower users to make better decisions about their health — using simple, accessible technology that doesn’t require a medical background.</p>
+
+    <h4>How It Works</h4>
+    <p>The system analyzes symptoms entered by users and maps them to potential diseases using a machine learning model trained on medical datasets. It then displays helpful suggestions like precautions, possible medications, diet, and workout guidance.</p>
+
+    <h4>Made by a Student</h4>
+    <p>This platform was created as a project by Richa Dubey, MCA student at NIT Raipur, combining passion for AI and a mission to create meaningful tools for society.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 Medicine Recommendation System | Built with 💙 by Richa Dubey
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-bs-theme');
+      html.setAttribute('data-bs-theme', current === 'dark' ? 'light' : 'dark');
+    }
+  </script>
+</body>
+</html>
